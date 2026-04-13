@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    rootDir: backend
+
+  - type: web
+    name: frontend
+    env: static
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: build
+    rootDir: frontend
