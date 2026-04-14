@@ -41,4 +41,5 @@ app.get("/careers", (req, res) => res.json(careers));
 
 app.get("/", (req, res) => res.send("OK"));
 
-app.listen(10000, () => console.log("Server running"));
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, () => console.log("Server running"));
