@@ -13,12 +13,11 @@ function App() {
   const [exams, setExams] = useState([]);
   const [careers, setCareers] = useState([]);
 
-  useEffect(() => {
-    fetch(`${API}/schemes`).then(res => res.json()).then(setSchemes);
-    fetch(`${API}/exams`).then(res => res.json()).then(setExams);
-    fetch(`${API}/careers`).then(res => res.json()).then(setCareers);
-  }, []);
-
+ useEffect(() => {
+  fetch(`${API}/schemes`).then(res => res.json()).then(setSchemes);
+  fetch(`${API}/exams`).then(res => res.json()).then(setExams);
+  fetch(`${API}/careers`).then(res => res.json()).then(setCareers);
+}, []);
   return (
     <div>
       <h2>Student Support Portal</h2>
