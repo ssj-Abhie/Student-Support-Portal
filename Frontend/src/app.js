@@ -3,7 +3,7 @@ import Schemes from "./components/Schemes";
 import Exams from "./components/Exams";
 import Careers from "./components/Careers";
 
-const API = "https://your-backend-name.onrender.com";
+const API = "https://student-backend-tg6z.onrender.com";
 
 const states = ["All","Maharashtra","Uttar Pradesh","Karnataka"];
 
